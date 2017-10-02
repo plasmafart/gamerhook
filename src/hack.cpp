@@ -82,7 +82,6 @@ bool test_handleevent(IMatSystemSurface* thisptr, const InputEvent_t& event) {
 
 void hack::Initialize() {
 	srand(time(0));
-	prctl(PR_SET_DUMPABLE,0,42,42,42);
 	sharedobj::LoadAllSharedObjects();
 	g_pszTFPath = tf_path_from_maps();
 	CreateInterfaces();
