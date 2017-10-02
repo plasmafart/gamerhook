@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+git pull origin master && \
+git submodule update --remote --recursive && \
+make clean && \
+make -j4
